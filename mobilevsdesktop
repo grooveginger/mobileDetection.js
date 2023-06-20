@@ -1,0 +1,11 @@
+var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+if (isMobile) {
+    //Mobile device actions
+    var aTag = document.createElement('a');
+    aTag.setAttribute('href',"sms:?&body=Check%20out%20Survive%20Accounting%20and%20use%20promo%20code%20SURVIVE%20for%2010%25%20off!%20http://surviveaccounting.com");
+    aTag.innerText = "Share with a friend via SMS!";
+    document.body.appendChild(aTag);
+} else {
+    //Desktop actions
+    // Do nothing, don't show the link
+}
